@@ -40,6 +40,8 @@ export default function NewTransaction() {
         type: "CR",
       },
     });
+
+    newTransaction.current.value = "";
   };
 
   const subAmount = (event) => {
@@ -58,6 +60,8 @@ export default function NewTransaction() {
         type: "DR",
       },
     });
+
+    newTransaction.current.value = "";
   };
 
   return (
